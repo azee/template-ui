@@ -1,0 +1,359 @@
+.navbar .nav > li > div {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    cursor: auto;
+}
+
+.verticalCenter35Child {
+    position: absolute;
+    top: 35%;
+}
+
+.verticalCenterContainer {
+    position: relative;
+}
+
+.warning {
+    background: url('/imgs/warning_small.png') no-repeat;
+    padding-left: 35px !important;
+}
+
+
+.itemsList {
+    height: 70%;
+    overflow: auto;
+}
+
+#items .ui-selecting {
+    background: none repeat scroll 0 0 #049CDB;
+}
+
+#items .ui-selected {
+    background: none repeat scroll 0 0 #0075DE;
+    color: white;
+}
+
+#items {
+    list-style-type: none;
+    margin: -15px 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+#grouped-items {
+    list-style-type: none;
+    margin: -15px 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+#items li, #items li a, #grouped-items li, #grouped-items li a {
+    cursor: pointer;
+    font-size: 1.1em;
+    height: 18px;
+    margin: 3px;
+    padding: 0.1em;
+    color: #505050;
+    text-decoration: none;
+}
+
+#items li:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    cursor: pointer;
+}
+
+
+.alert {
+    float : left;
+    width: 95%;
+}
+
+.filter {
+    margin-bottom: -10px;
+}
+
+#filter {
+    height: 25px;
+}
+
+select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input {
+    height: 25px;
+}
+
+.btn.filterbutton {
+    margin-bottom: 15px;
+    /*margin-left: 15px;*/
+}
+
+.services-row {
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+.services-row:hover {
+    cursor: pointer;
+}
+
+.leaf-services-row {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 1px;
+    margin-left: 60px;
+    padding: 10px;
+    width: 858px;
+}
+
+.leaf-services-row:after {
+    clear: both;
+}
+
+.leaf-services-row, .row:after {
+    content: "";
+    display: table;
+}
+
+.control-label-no-width {
+    float: left;
+    padding-top: 5px;
+    text-align: left;
+    width: 140px;
+}
+
+#projects-list {
+    background-color: #FAFAFA;
+    height: 91%;
+    margin-left: 45%;
+    padding: 5px;
+    float: left;
+    top: 10%;
+    position: absolute;
+}
+
+.remove-label, .add-label {
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.add-suite, .remove-suite, .testprops, .params-btn{
+    cursor: pointer;
+}
+
+.failed-service{
+    background:#FFEBEB;
+}
+
+.hidden{
+    display: none;
+}
+
+.vertical-divider {
+    background-color: #E5E5E5;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    min-height: 20px;
+    width: 2px;
+    margin: 9px 1px;
+    overflow: hidden;
+}
+
+.service-group{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: -10px;
+    display: block;
+    padding-top: 10px;
+}
+
+.innerTable {
+    width: 100%;
+    border-color: white;
+    margin: -8px;
+}
+
+table.innerTable tr, td {
+    border-width: 0px;
+}
+
+.disabled a {
+    color: #999999;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.btn.filterbutton {
+    margin-bottom: 15px;
+}
+
+.devRow {
+    float: left;
+    padding-right: 20px
+}
+
+.params {
+    float: left;
+    padding-right: 10px;
+}
+
+.paramRow {
+    padding-bottom: 20px;
+}
+
+.propertyField {
+    float: left;
+    padding-right: 20px;
+}
+
+.propertyContainer {
+    padding-bottom: 5px;
+}
+
+.title {
+    margin-right: 5px;
+}
+
+.total{
+    font-weight: bold;
+}
+
+.remove-launch{
+    cursor: pointer;
+}
+
+.uid {
+    font-size: 11px;
+    color: grey;
+}
+
+.keyTooltip {
+    font-size: 11px;
+    color: grey;
+    float: left;
+}
+
+.failConfigContainer {
+    padding-bottom: 10px;
+}
+
+.left-full-line {
+    width: 100%;
+    float: left;
+}
+
+.table-line {
+    display: inline-table;
+}
+
+
+.launches_top {
+    position: relative;
+    overflow: hidden;
+}
+
+.statistics {
+    overflow: hidden;
+}
+
+
+.stats_row {
+    padding-left: 10px;
+}
+
+.launches_title {
+    float : left;
+    margin-right: 10px;
+}
+
+.test_class {
+    font-size: 10px;
+    color: #bfbfbf;
+}
+
+.modal700 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050;
+    width: 700px;
+    margin: -250px 0 0 -380px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    *border: 1px solid #999;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.filter-row{
+    margin-left: -40px !important;
+}
+
+.stats40{
+    width : 40%;
+}
+
+.nav-tabs-h2-padding{
+    padding-top: 60px;
+}
+
+.stat-launches{
+    font-size:8pt;
+}
+
+.launches-number-stats, .launches-times-stats{
+    position: relative;
+    width: 620px;
+    height: 400px;
+    border: 1px solid #DDDDDD;
+    padding-top: 60px;
+}
+
+.launches-state-stats{
+    position: relative;
+    width: 1182px;
+    height: 450px;
+    border: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+}
+
+.nav-tabs-pack{
+    margin-right: 0px !important;
+}
+
+.nav-tabs-pack-pane{
+    width: 60px !important;
+    min-width: 0px !important;
+}
+
+.nav-tabs-pack-pane > a{
+    min-width: 0px !important;
+}
+
+.stats-average{
+    margin: 5px !important;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.avgStats{
+    float: right;
+}
