@@ -2,7 +2,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/someBeans/someBeanTemplate.html' ,
+    'text!templates/someBean/someBeanTemplate.html' ,
     //dirty hack for handlebars loading wait
     'handlebars'
 ], function($, _, Backbone, someBeanTemplate){

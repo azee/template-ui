@@ -2,6 +2,8 @@
 // Require.js allows us to configure shortcut alias
 // Their usage will become more apparent further along in the tutorial.
 require.config({
+    urlArgs: "bust=${timestamp}",
+
     paths: {
         jquery: 'libs/jquery/jquery-min',
         jqueryUI: 'libs/jquery/jqueryui/jquery-ui-1.8.21.min',
@@ -18,7 +20,8 @@ require.config({
         text: 'libs/require/text',
         EmptyHeader : 'views/layout/EmptyHeader',
         BlankFooter : 'views/layout/BlankFooter',
-        SomeBeansView : 'views/someBeans/SomeBeansView',
+        PageLayoutView: 'views/layout/PageLayoutView',
+        SomeBeansView : 'views/someBean/SomeBeansView',
         UserProfileView : 'views/user/UserProfileView'
     },
     shim: {

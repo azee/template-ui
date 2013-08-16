@@ -2,9 +2,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'collections/someBeans/SomeBeansCollection',
+    'collections/someBean/SomeBeansCollection',
     'views/someBean/SomeBeanView',
-    'text!templates/someBeans/someBeansTemplate.html',
+    'text!templates/someBean/someBeansTemplate.html',
     //dirty hack for handlebars loading wait
     'handlebars',
     'libs/ginny/ginny'

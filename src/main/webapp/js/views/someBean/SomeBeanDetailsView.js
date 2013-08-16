@@ -2,7 +2,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/someBeans/someBeansDetailsTemplate.html' ,
+    'text!templates/someBean/someBeansDetailsTemplate.html' ,
     'models/projects/ProjectDetailsModel' ,
     //dirty hack for handlebars loading wait
     'handlebars'

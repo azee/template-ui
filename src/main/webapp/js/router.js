@@ -10,13 +10,13 @@ define([
     'backbone',
     'PageLayoutView',
     //library has to be loaded globally
-    'deparam',
+    'deparam'
 
 ], function ($, _, Backbone, PageLayoutView) {
 
     var AppRouter = Backbone.Router.extend({
         routes:{
-            '':'showSomeBeans',
+            '':'showMainPage',
             'someBeans?:params':'showSomeBeans',
             'someBean/:id':'showSomeBean',
             'user/profile':'showUserProfile',
@@ -25,7 +25,7 @@ define([
         },
 
         initialize : function () {
-            _.bindAll(this, 'showMain', 'showSomeBeans', 'showSomeBean', 'showUserProfile');
+            _.bindAll(this, 'showMainPage', 'showSomeBeans', 'showSomeBean', 'showUserProfile', 'showPage');
         },
 
         showPage : function (MainView,HeaderView,FooterView) {
@@ -38,6 +38,19 @@ define([
             var page = new PageLayoutView(this.showParams);
             page.render();
             this.setView(page);
+        },
+
+        showMainPage : function () {
+            this.showParams = {
+                el:'#page',
+                mainContentOptions:{
+                },
+                headerOptions:{
+                    activeTitle:'Main Page',
+                    pageTitle : 'Main Page'
+                }
+            };
+            require(['SomeBeansView'], this.showPage);
         },
 
         showSomeBeans : function (params) {
