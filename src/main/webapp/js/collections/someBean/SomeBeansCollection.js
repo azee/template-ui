@@ -7,7 +7,7 @@ define([
 
     var SomeBeansCollection = Backbone.Collection.extend({
         model: SomeBeanModel,
-        url: "some-api/versions/some-beans/all",
+        url: "mockdata/someBeansCollection.json",
 
         initialize : function (options) {
             _.bindAll(this);
@@ -23,7 +23,6 @@ define([
                 }
             }));
         }
-
     });
 
     return SomeBeansCollection;

@@ -28,7 +28,6 @@ define([
 
         render:function () {
             this.$el.html(this.template());
-            this.collection.each(this.appendItem);
             return this;
         },
 
