@@ -22,7 +22,8 @@ require.config({
         BlankFooter : 'views/layout/BlankFooter',
         PageLayoutView: 'views/layout/PageLayoutView',
         SomeBeansView : 'views/someBean/SomeBeansView',
-        UserProfileView : 'views/user/UserProfileView'
+        UserProfileView : 'views/user/UserProfileView',
+        SomeBeanDetailsView: 'views/someBean/SomeBeanDetailsView'
     },
     shim: {
         jquery : {

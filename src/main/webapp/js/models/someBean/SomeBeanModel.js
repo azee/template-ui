@@ -1,25 +1,26 @@
 define([
     'jquery',
     'underscore',
-    'backbone'
+    'backbone',
+    'libs/ginny/ginny'
 ], function($, _, Backbone){
 
     var SomeBeanModel = Backbone.Model.extend({
         id: "",
-        url : '/some-api/version/some-bean/',
+        url : 'mockdata/someBeanData.json',
 
         methodToURL: {
             'read': "",
-            'create': "/some-api/version/some-bean/",
-            'update': "/some-api/version/some-bean/",
+            'create': "mockdata/someBeanData.json",
+            'update': "mockdata/someBeanData.json",
             'delete': ""
         },
 
         initialize: function (options) {
             if (options != null) {
                 this.id = options.id;
-                this.methodToURL['read'] = this.url + this.id;
-                this.methodToURL['delete'] = this.url + this.id;
+                this.methodToURL['read'] = this.url + "?id=" + this.id;
+                this.methodToURL['delete'] = this.url + "?id=" + this.id;
             }
         },
 
@@ -28,6 +29,12 @@ define([
             options.url = model.methodToURL[method.toLowerCase()];
 
             Backbone.sync(method, model, options);
+        },
+
+        parse: function(data){
+            data.displayCreatedTime = Ginny.timeToDate(data.created);
+            data.displayTimePassed = Ginny.timePassed(data.time);
+            return data;
         }
     });
 

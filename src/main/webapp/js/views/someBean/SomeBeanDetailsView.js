@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'text!templates/someBean/someBeansDetailsTemplate.html' ,
-    'models/projects/ProjectDetailsModel' ,
+    'models/someBean/SomeBeanModel' ,
     //dirty hack for handlebars loading wait
     'handlebars'
 ], function($, _, Backbone,someBeanDetailsTemplate, SomeBeanDetailsModel){
@@ -27,7 +27,6 @@ define([
         },
         renderDetails : function() {
             this.$el.append(this.template(this.model.toJSON()));
-            $('html head').find('title').text(this.model.get('title'));
             return this;
         }
     });

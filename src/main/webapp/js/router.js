@@ -74,7 +74,7 @@ define([
                     id : id
                 }
             };
-            require(['UserDetailsView'], this.showPage);
+            require(['SomeBeanDetailsView'], this.showPage);
         },
 
         showUserProfile : function () {
