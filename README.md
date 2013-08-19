@@ -22,3 +22,8 @@ location / {
     root /usr/share/MyUI;
 }
 ```
+
+Demo
+=================
+
+http://template.greatbit.ru/
