@@ -17,8 +17,8 @@ Build
 The project can be build by maven and can be installed just as a WAR.
 All you need is just configure your web server (e.g. NGINX) like this:
 
-'
+```
 location / {
     root /usr/share/MyUI;
 }
-'
+```
