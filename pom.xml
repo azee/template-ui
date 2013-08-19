@@ -105,6 +105,11 @@
                 <version>2.1</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webResources>
+                        <resource>
+                            <directory>target/classes</directory>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
             <plugin>
