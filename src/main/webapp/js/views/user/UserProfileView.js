@@ -6,8 +6,7 @@ define([
     'text!templates/user/userDetailsTemplate.html' ,
     //dirty hack for handlebars loading wait
     'handlebars',
-    'jqueryUI',
-    'chosen'
+    'jqueryUI'
 ], function($, _, Backbone,UserSidDetailsModel,userDetailsTemplate){
 
     var UserProfileView = Backbone.View.extend({

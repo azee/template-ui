@@ -13,17 +13,11 @@ define(
                 }
             },
 
-            url: "some-api/version/user/token",
+            url: "/mockdata/session.json",
 
             initialize: function () {
                 this.fetch();
             },
-
-            //Mocking the user - remove if used with the real API:////
-            fetch : function(){
-                return {}
-            },
-            /////////////////////////////////////////////////////////
 
             parse: function (data) {
                 if (!data.id) {
