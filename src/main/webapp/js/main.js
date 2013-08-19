@@ -23,7 +23,10 @@ require.config({
         PageLayoutView: 'views/layout/PageLayoutView',
         SomeBeansView : 'views/someBean/SomeBeansView',
         UserProfileView : 'views/user/UserProfileView',
-        SomeBeanDetailsView: 'views/someBean/SomeBeanDetailsView'
+        SomeBeanDetailsView: 'views/someBean/SomeBeanDetailsView',
+        SomeBeansPageView: 'views/someBean/SomeBeansPageView',
+        SomeBeanPageView: 'views/someBean/SomeBeanPageView',
+        SomeBeanPagerItemsView: 'views/pager/SomeBeanPagerItemsView'
     },
     shim: {
         jquery : {

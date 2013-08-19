@@ -25,7 +25,7 @@ define([
                 },
                 {
                     title: "Some Beans",
-                    url: "#/some-beans"
+                    url: "#/some-beans?skip=0&limit=20"
                 },
             ];
 

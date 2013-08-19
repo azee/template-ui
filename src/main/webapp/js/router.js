@@ -17,7 +17,7 @@ define([
     var AppRouter = Backbone.Router.extend({
         routes:{
             '':'showMainPage',
-            'someBeans?:params':'showSomeBeans',
+            'some-beans?:params':'showSomeBeans',
             'someBean/:id':'showSomeBean',
             'user/profile':'showUserProfile',
             // Default
@@ -64,7 +64,7 @@ define([
                     pageTitle : 'Some Beans'
                 }
             };
-            require(['SomeBeansView'], this.showPage);
+            require(['SomeBeansPageView'], this.showPage);
         },
 
         showSomeBean : function (id) {

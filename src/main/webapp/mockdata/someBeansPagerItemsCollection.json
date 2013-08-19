@@ -1,0 +1,65 @@
+{"pages": [
+    {
+        "title": "← Previous",
+        "args": "skip=-20&limit=20",
+        "pageNumber": 0,
+        "enabled": false,
+        "active": false
+    },
+    {
+        "title": "1",
+        "args": "skip=0&limit=20",
+        "pageNumber": 1,
+        "enabled": false,
+        "active": true
+    },
+    {
+        "title": "2",
+        "args": "skip=20&limit=20",
+        "pageNumber": 2,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "3",
+        "args": "skip=40&limit=20",
+        "pageNumber": 3,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "4",
+        "args": "skip=60&limit=20",
+        "pageNumber": 4,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "5",
+        "args": "skip=80&limit=20",
+        "pageNumber": 5,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "6",
+        "args": "skip=100&limit=20",
+        "pageNumber": 6,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "...",
+        "args": "skip=120&limit=20",
+        "pageNumber": 7,
+        "enabled": true,
+        "active": false
+    },
+    {
+        "title": "Next →",
+        "args": "skip=20&limit=20",
+        "pageNumber": 0,
+        "enabled": true,
+        "active": false
+    }
+], "count": 55405, "step": 20, "startWith": 0, "objectsOnCurrPage": 0, "pagesWindow": 7, "numberOfPages": 2771, "centralPage": 4}
