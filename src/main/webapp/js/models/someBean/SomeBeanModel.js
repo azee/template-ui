@@ -28,7 +28,7 @@ define([
             options = options || {};
             options.url = model.methodToURL[method.toLowerCase()];
 
-            Backbone.sync(method, model, options);
+            return Backbone.sync(method, model, options);
         },
 
         parse: function(data){
